@@ -34,14 +34,6 @@ In order to see your site in action, run Hugo's built-in local server.
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
-
-## Contributing
-
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-hikari-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-hikari-theme/pulls).
-
-Please create a separate branch for each pull request.
-
-
 ## License
 
 This theme is released under the MIT license. For more information read the [License](//github.com/dt801ts/sublime-hugo-theme/LICENSE.MD).
