@@ -1,0 +1,19 @@
+<main>
+    <div id="home">
+        <ul class="posts">
+        {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
+        {{ range $paginator.Pages }}
+            <li itemscope itemtype="//schema.org/BlogPosting">
+                <a href="{{ .Permalink }}" itemprop="url">
+                    <div class="p-wrap">
+                        <time datetime="" itemprop="datePublished">
+                        <<span class="p-attr">p</span> <span class="class-attr">class</span>=<span class="date-attr">"date"</span>><span class="baffle">{{ .Date.Format "02 Jan 2006" }}</span></<span class="p-attr">p</span>>
+                        </time>
+                        <p itemprop="name headline"><<span class="title-attr">title</span>><span class="baffle">{{ .Title }}</span></<span class="title-attr">title</span>></p>
+                    </div>
+                </a>
+            </li>
+        {{ end }}
+        </ul>
+    </div>
+</main>

@@ -1,0 +1,45 @@
+baseurl = "https://github.com/dt801ts/sublime-hugo-theme/"
+# remember trailing / at end of baseurl
+languageCode = "en-us"
+title = "Sublime Hugo"
+# Enable comments by entering your Disqus shortname
+# disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+# googleAnalytics = ""
+paginate = 50
+theme = "sublime-hugo"
+
+[permalinks]
+	post = "/:year/:month/:day/:slug"
+
+[params]
+	name = "Your NAme"
+	description = ""
+	copyright = ""
+
+	# Custom assets can be linked with their paths relative to static/
+	custom_css = []
+	custom_js  = []
+
+	# Links to newer/older blog posts
+	newer = "Newer"
+	older = "Older"
+
+	pageNotFoundTitle = "Page not found"
+	pageNotFoundSubtitle = "The requested page was not <br> found on the server."
+
+[params.offcanvas]
+	# Menu items
+	title = "Sublime Hugo"
+	bio = "123 Main St"
+	bio2 = "Big City, CA 90012"
+	subscribe = "Subscribe"
+	followme = "Contact"
+
+	# Enable Google search
+	search_enabled = true
+	search = "Search"
+
+	[[params.offcanvas.socialnetworks]]
+		name = "youremail@protonmail.ch"
+		url = "mailto:youremail@protonmail.ch"

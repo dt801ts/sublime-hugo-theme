@@ -1,0 +1,21 @@
+{{ partial "head" . }}
+<body>
+    
+    {{ partial "off-canvas" . }}
+
+    <a class="menu-icon" title="Menu"><span class="lines"></span></a>
+
+    {{ partial "header" . }}
+    
+    <div class="site-wrapper">
+        
+        {{ partial "post-list" . }}
+        {{ partial "pagination" . }}        
+    
+        {{ partial "footer" . }}
+    </div>
+    
+    {{ partial "js" . }}
+    
+</body>
+</html>

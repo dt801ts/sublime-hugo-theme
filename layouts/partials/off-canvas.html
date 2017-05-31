@@ -1,0 +1,55 @@
+<div class="off-canvas">
+    <figure class="avatar">
+        <img src="{{ .Site.BaseURL }}img/Gender Neutral User-80.svg" title="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+    </figure>
+    <div class="bio">
+        {{ with .Site.Params.offcanvas.title }}
+        <h1>{{ . }}</h1>
+        {{ end }}
+        {{ with .Site.Params.offcanvas.bio }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .Site.Params.offcanvas.bio2 }}
+        <p class="bio2">{{ . | markdownify }}</p>
+        {{ end }}
+    </div>
+    <nav>
+
+        {{ if .Site.Params.offcanvas.search_enabled }}
+
+            {{ with .Site.Params.offcanvas.search }}
+            <h6>{{ . }}</h6>
+            {{ end }}
+
+            <div>
+                <form name="google-search" method="get" action="http://www.google.com/search" target="_blank">
+                    <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" />
+                    <input class="search-input" name="q" type="text" required />
+                    <input class="search-submit" type="submit" name="sa" value="Search" />
+                </form>
+            </div>
+
+        {{end}}        
+
+        {{ with .Site.Params.offcanvas.followme }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+
+        <ul>
+        {{ range .Site.Params.offcanvas.socialnetworks }}
+            <li><a class="email" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
+            <li>F0F0 F0F0 F0F0 F0F0 F0F0 </li>
+            <li>F0F0 F0F0 F0F0 F0F0 F0F0</li>
+            <li><a target="_blank" href="{{ .Site.BaseURL }}misc/yourPGPkey.txt"><img class="key_img" src="{{ .Site.BaseURL }}img/key.png"></a></li>
+        {{ end }}
+        </ul>     
+
+        {{ with .Site.Params.offcanvas.subscribe }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+
+        <ul>
+            <li><a class="rss" target="_blank" href="{{ .Site.BaseURL }}index.xml">RSS feed</a></li>
+        </ul>   
+    </nav>
+</div>

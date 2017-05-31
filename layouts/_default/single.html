@@ -1,0 +1,54 @@
+{{ partial "head" . }}
+<body>
+    
+    <!-- {{ partial "off-canvas" . }} -->
+
+    {{ partial "header" . }}
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    {{ .Date.Format "02 January 2006" }}
+                   <!--  {{ if .Params.location }}
+                        <span>
+                            {{ .Params.location }}
+                        </span>
+                    {{ end }} -->
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">{{ .Title }}</h1>
+                <div itemprop="articleBody">
+                    {{ .Content }}                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                {{ template "_internal/disqus.html" . }}
+                
+            </article>
+        </section>
+
+        {{ partial "footer" . }}
+    </div>
+
+    <div class="next-prev-arrows">
+        {{ if .NextInSection }}
+            <a rel="next" href="{{ .NextInSection.Permalink }}" id="next">
+                &larr; <span class="nav-title nav-title-next">{{ .NextInSection.Title }}</span> 
+            </a>
+        {{ end }}
+        {{ if .PrevInSection }}
+            <a rel="prev" href="{{ .PrevInSection.Permalink }}" id="prev">
+                 <span class="nav-title nav-title-prev">{{ .PrevInSection.Title }}</span> &rarr;
+            </a>
+        {{ end }}
+    </div>
+
+    {{ partial "js" . }}
+</body>
+</html>
