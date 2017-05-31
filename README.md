@@ -23,7 +23,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ### The config file
 
-Take a look inside the [`exampleSite`](/exampleSite) folder of this theme. You'll find a file called [`config.toml`](/exampleSite/config.toml).
+Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml).
 
 To use it, copy the [`config.toml`](/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
