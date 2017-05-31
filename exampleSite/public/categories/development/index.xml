@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Sublime Hugo</title>
-    <link>/categories/development/index.xml</link>
+    <link>https://example.com/categories/development/index.xml</link>
     <description>Recent content in Development on Sublime Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Prometheus and the Wild Dogs</title>
-      <link>/posts/spf13-vim-3-0-release-and-new-website/</link>
+      <link>https://example.com/posts/spf13-vim-3-0-release-and-new-website/</link>
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/posts/spf13-vim-3-0-release-and-new-website/</guid>
+      <guid>https://example.com/posts/spf13-vim-3-0-release-and-new-website/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;big-first-letter&#34;&gt;M&lt;/span&gt;orem ipsum dolor sit amet, hendrerit rutrum aliquam ullamcorper purus non sed. Vitae fames porttitor justo amet, eu neque donec enim vitae vitae vivamus, pede justo metus velit id diam. Scelerisque eget egestas adipiscing mollis in dictum, eu velit amet arcu nibh massa, fringilla ut nunc gravida maecenas phasellus, vulputate felis lacinia integer turpis aliquam. Ultricies eu amet magna, scelerisque ac nulla, auctor nullam vestibulum sapien rutrum pellentesque venenatis, vestibulum a. Auctor vel fermentum.
 Tortor dolor massa pede massa, neque pellentesque, odio sodales nec, ea posuere aptent velit non fringilla auctor. Maiores posuere. Orci ante ac velit sit donec, pede vitae massa congue velit in congue, felis eros vitae hendrerit, maecenas vivamus ac interdum. Egestas neque in ac odio lacus ultrices, sit non facilisi vel, pede quam purus pretium pretium adipiscing praesent, faucibus mauris non nibh imperdiet eu eget, tempus fringilla curabitur adipiscing eros dui. Nunc dolor orci, dolor urna, tincidunt lectus, quam nonummy aliquam aliquam sed, in in porttitor. Lacus elit amet convallis tincidunt tellus. Morbi nunc imperdiet eleifend velit purus. Non et eget, sem potenti mauris vitae nunc. Praesent at dui vitae aliquet. Ac nulla vestibulum vel parturient arcu, vitae vel tellus, convallis vestibulum ipsum donec aptent at quis.&lt;/p&gt;
 

@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "https://example.com/"
 # remember trailing / at end of baseurl
 languageCode = "en-us"
 title = "Sublime Hugo"
