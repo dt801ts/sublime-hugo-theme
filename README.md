@@ -21,14 +21,27 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Setup
 
+### Run the Example Site
+
+Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme. To build or re-build:
+
+	$ hugo
+
+To test:
+
+	$ hugo server
+
+Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+
+
 ### The config file
 
-Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml).
+Inside [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme, you'll find a file named [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml).
 
-To use it, copy the [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
+Copy the [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml) into the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
 
-### Nearly finished
+### Run
 
 In order to see your site in action, run Hugo's built-in local server. 
 
