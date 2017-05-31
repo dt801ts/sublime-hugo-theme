@@ -1,5 +1,0 @@
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-paste your pgp key here /misc/yourPGPkey.txt
-
------END PGP PUBLIC KEY BLOCK-----
