@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "//github.com/dt801ts/sublime-hugo-theme/LICENSE.MD"
 description = "hugo theme"
 homepage = "//github.com/dt801ts/sublime-hugo-theme"
-tags = ["blog", "minimal", "syntax highlighting", "dev", "sublime"]
+tags = ["blog", "minimal", "syntax highlighting", "dev"]
 features = ["", ""]
 min_version = 0.17
 
