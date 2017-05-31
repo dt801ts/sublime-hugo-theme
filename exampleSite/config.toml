@@ -1,4 +1,4 @@
-baseurl = "https://github.com/dt801ts/sublime-hugo-theme/"
+baseurl = ""
 # remember trailing / at end of baseurl
 languageCode = "en-us"
 title = "Sublime Hugo"
