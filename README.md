@@ -1,5 +1,7 @@
 # Sublime Hugo Theme
 
+[Live Demo](https://dt801ts.github.io/sublime-hugo-theme-demo/)
+
 ... a port of [digitalcraftsman](//github.com/digitalcraftsman)'s origin [Hugo Hikari theme](//github.com/digitalcraftsman/hugo-hikari-theme) ...
 
 ... which is itself a port of [Mathieu Mayer-Mazzoli](//github.com/mx3m)'s origin [Hikari theme](//github.com/mx3m/hikari-for-Jekyll) made for Jekyll. 
