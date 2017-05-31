@@ -21,9 +21,9 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ### The config file
 
-Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/exampleSite/config.toml).
+Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/exampleSite/config.toml).
 
-To use it, copy the [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
+To use it, copy the [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
 
 ### Nearly finished
