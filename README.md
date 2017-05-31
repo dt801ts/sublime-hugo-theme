@@ -6,7 +6,7 @@
 
 ... which is itself a port of [Mathieu Mayer-Mazzoli](//github.com/mx3m)'s origin [Hikari theme](//github.com/mx3m/hikari-for-Jekyll) made for Jekyll. 
 
- ![Screenshot](//github.com/dt801ts/sublime-hugo-theme/tree/master/images/screenshot.png)
+ ![Screenshot](https://raw.githubusercontent.com/dt801ts/sublime-hugo-theme/master/images/screenshot.png)
 
 
 ## Installation
