@@ -1,6 +1,6 @@
 # Sublime Hugo Theme
 
-['Live Demo'](https://dt801ts.github.io/sublime-hugo-theme-demo/)
+[`Live Demo`](https://dt801ts.github.io/sublime-hugo-theme-demo/)
 
 ... a port of [digitalcraftsman](//github.com/digitalcraftsman)'s origin [Hugo Hikari theme](//github.com/digitalcraftsman/hugo-hikari-theme) ...
 
