@@ -25,7 +25,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 Take a look inside the [`exampleSite`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml).
 
-To use it, copy the [`config.toml`](/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
+To use it, copy the [`config.toml`](//github.com/dt801ts/sublime-hugo-theme/tree/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
 
 ### Nearly finished
@@ -38,7 +38,7 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 ## License
 
-This theme is released under the MIT license. For more information read the [License](//github.com/dt801ts/sublime-hugo-theme/LICENSE.MD).
+This theme is released under the MIT license. For more information read the [License](//github.com/dt801ts/sublime-hugo-theme/tree/master/LICENSE.MD).
 
 
 ## Annotations
