@@ -1,8 +1,16 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/scrollreveal.min.js"></script>
-<script type='application/javascript' src='{{ .Site.BaseURL }}js/smooth-scrollbar.js'></script>
-<script src="{{ .Site.BaseURL }}js/baffle.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script>
+(function () {
+  if (window.fetch) return;
+  document.write('<script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.slim.min.js"><\/script>');
+  document.write('<script src="{{ .Site.BaseURL }}js/scrollreveal.min.js"><\/script>');
+  document.write('<script src="{{ .Site.BaseURL }}js/smooth-scrollbar.js"><\/script>');
+  document.write('<script src="{{ .Site.BaseURL }}js/baffle.min.js"><\/script>');
+  document.write('<script src="{{ .Site.BaseURL }}js/baffle.min.js"><\/script>');
+  document.write('<script src="{{ .Site.BaseURL }}js/main.js"><\/script>');
+})()
+</script>
+
+<script defer src="{{ .Site.BaseURL }}js/main-jquery.js"></script>
 {{ range .Site.Params.custom_js }}
 <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 {{ end}}
@@ -11,5 +19,5 @@
 
 
 {{ "<!-- Syntax highlighting -->" | safeHTML }}
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

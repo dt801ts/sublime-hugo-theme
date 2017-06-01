@@ -1,7 +1,8 @@
-window.onload = function() {
+var initApplication = (function() {
+    'use strict';
 
     var $menuIcon = document.getElementsByClassName('menu-icon')[0],
-        $offCanva = document.getElementsByClassName('off-canvas')[0];
+        $offCanva = document.getElementsByClassName('off-canvas')[0],
         $siteWrap = document.getElementsByClassName('site-wrapper')[0];
 
 
@@ -81,27 +82,6 @@ window.onload = function() {
         });
     };
 
-    if($(window).width() >= 1025){
-        if(document.getElementById('full-wrapper')){
-            setScrollbar();     
-        }
-    }
-    else{
-        $('.full-wrapper').css({'overflow-y':'scroll', '-webkit-overflow-scrolling':'touch', 'overflow-x':'hidden'});
-    }
-
-    window.onresize = function(event) {
-        if($(window).width() < 1025 && Scrollbar.has(document.getElementById('full-wrapper'))){
-            scrollbar.destroy();
-            $('.full-wrapper').css({'overflow-y':'scroll', '-webkit-overflow-scrolling':'touch', 'overflow-x':'hidden'});
-        }
-        if($(window).width() >= 1025 && !(Scrollbar.has(document.getElementById('full-wrapper')))){
-            if(document.getElementById('full-wrapper')){
-                setScrollbar();     
-            }
-        }
-    };
-
     // Open Twitter/share in a Pop-Up
     var $popup = document.getElementsByClassName('popup')[0];
     if (!$popup) {
@@ -125,4 +105,11 @@ window.onload = function() {
         return false;
     });
 
+});
+
+// document ready handler
+document.onreadystatechange = function () {
+  if (document.readyState === "interactive") {
+    initApplication();
+  }
 }
