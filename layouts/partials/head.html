@@ -13,6 +13,27 @@
     <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
     {{ .Hugo.Generator }}
 
+    {{ template "_internal/google_analytics_async.html" . }}
+    
+    <script>
+      (function (window, document, undefined) {
+        if (!window.fetch) return;
+        /*! Fetch Inject v1.7.0 | (c) 2017 Josh Habdas | @license ISC */
+        !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.fetchInject=t()}(this,function(){"use strict";const e=function(e,t,n,o,r,i,c){i=t.createElement(n),c=t.getElementsByTagName(n)[0],i.appendChild(t.createTextNode(o.text)),i.onload=r(o),c?c.parentNode.insertBefore(i,c):t.head.appendChild(i)};return function(t,n){if(!t||!Array.isArray(t))return Promise.reject(new Error("`inputs` must be an array"));if(n&&!(n instanceof Promise))return Promise.reject(new Error("`promise` must be a promise"));const o=[],r=n?[].concat(n):[],i=[];return t.forEach(e=>r.push(window.fetch(e).then(e=>[e.clone().text(),e.blob()]).then(e=>Promise.all(e).then(e=>{o.push({text:e[0],blob:e[1]})})))),Promise.all(r).then(()=>{o.forEach(t=>{i.push({then:n=>{t.blob.type.includes("text/css")?e(window,document,"style",t,n):e(window,document,"script",t,n)}})});return Promise.all(i)})}});
+        fetchInject([
+          'https://cdn.jsdelivr.net/jquery/3.2.1/jquery.slim.min.js',
+          'https://cdn.jsdelivr.net/highlight.js/9.11.0/highlight.min.js'
+        ], fetchInject([
+          '{{ .Site.BaseURL }}js/baffle.min.js',
+          '{{ .Site.BaseURL }}js/smooth-scrollbar.js',
+          '{{ .Site.BaseURL }}js/scrollreveal.min.js',
+          '{{ .Site.BaseURL }}js/main.js'
+        ])).then(() => {
+          window.hljs.initHighlightingOnLoad();
+        });
+      })(window, document);
+    </script>
+
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/smooth-scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css" />
