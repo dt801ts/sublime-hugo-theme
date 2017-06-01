@@ -1,7 +1,7 @@
 window.onload = function() {
 
     var $menuIcon = document.getElementsByClassName('menu-icon')[0],
-        $offCanva = document.getElementsByClassName('off-canvas')[0];
+        $offCanva = document.getElementsByClassName('off-canvas')[0],
         $siteWrap = document.getElementsByClassName('site-wrapper')[0];
 
 
